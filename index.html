@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto de Imagen Personal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #c31432, #240b36);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .formulario {
+      background: #f7f7f7;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .formulario label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .formulario input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .formulario button {
+      width: 100%;
+      padding: 14px;
+      background-color: #c31432;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .formulario button:hover {
+      background-color: #a70f28;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      header p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>¡Únete al Reto Gratuito!</h1>
+    <p>Transforma tu imagen personal en solo 7 días con nuestra asesoría profesional.</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Regístrate ahora</h2>
+    <form class="formulario" action="https://formsubmit.co/tucorreo@example.com" method="POST">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefono">Teléfono (opcional):</label>
+      <input type="tel" id="telefono" name="telefono" />
+
+      <!-- Opcional: redirigir tras enviar -->
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Enviar inscripción</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Proyecto Max | Asesoría de Imagen
+  </footer>
+
+</body>
+</html>
